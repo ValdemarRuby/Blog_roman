@@ -1,4 +1,4 @@
-<h1>Hello</h1>
+<h1>Hello, I am contacts</h1>
 
 <%= form_for :contact, url: '/contacts' do |c| %>
   <p>
@@ -8,10 +8,10 @@
 
   <p>
     <%= c.label :Message %><br />
-    <%= c.text_field :message %>
+    <%= c.text_area :message %>
   </p>
 
   <p>
-    <%= c.submit %>
+    <%= c.submit 'Save Message' %>
   </p>
 <% end %>
