@@ -1,0 +1,17 @@
+<h1>Hello</h1>
+
+<%= form_for :contact, url: '/contacts' do |c| %>
+  <p>
+    <%= c.label :Email %><br />
+    <%= c.text_field :email %>
+  </p>
+
+  <p>
+    <%= c.label :Message %><br />
+    <%= c.text_field :message %>
+  </p>
+
+  <p>
+    <%= c.submit %>
+  </p>
+<% end %>
