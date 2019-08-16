@@ -1,6 +1,15 @@
 <h1>Hello, I am contacts</h1>
 
 <%= form_for :contact, url: '/contacts' do |c| %>
+  <% if @contact %>
+  <p>
+    <ul>
+    <% @contact.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </p>
+  <% end %>
   <p>
     <%= c.label :Email %><br />
     <%= c.text_field :mail %>
