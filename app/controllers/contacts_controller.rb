@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
       @contact.save
     else
       render action: 'new'
-    end  
+    end
   end
 
   private
