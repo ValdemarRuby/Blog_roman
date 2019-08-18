@@ -3,3 +3,20 @@
 <p>
   <%= @article.text %>
 </p>
+
+<%= form_for([@article, @article.comments.build]) do |f| %>
+
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+
+  <p>
+    <%= f.label :Body %><br />
+    <%= f.text_field :body %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
