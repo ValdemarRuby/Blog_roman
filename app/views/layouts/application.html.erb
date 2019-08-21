@@ -12,10 +12,10 @@
   <body>
 
     <% if user_signed_in? %>
-      <%= link_to 'Sign out!', destroy_user_session_path, method: :delete,
+      Hello: <%= current_user.email %><%= link_to 'Sign out!', destroy_user_session_path, method: :delete,
      data: { confirm: 'Are you sure?' } %>
     <% else %>
-      <%= link_to 'Sign in!', new_user_session_path %>
+      <%= link_to 'Sign in!', new_user_session_path %> | 
     <% end %>
 
 
