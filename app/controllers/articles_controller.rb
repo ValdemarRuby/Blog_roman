@@ -1,4 +1,5 @@
 class ArticlesController < ApplicationController
+  # доступ к странице через авторизацию
   before_action :authenticate_user!
 
   def index
