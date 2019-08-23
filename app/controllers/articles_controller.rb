@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   # доступ к странице через авторизацию
-  before_action :authenticate_user!
+  before_action :authenticate_user!, :only => [:new, :create]
 
   def index
     @articles = Article.all
