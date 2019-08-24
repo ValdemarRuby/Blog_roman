@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  # доступ к странице через авторизацию
   before_action :authenticate_user!, :only => [:create]
 
   def create
