@@ -66,5 +66,6 @@ gem 'devise'
 gem 'bootstrap-sass'
 
 group :test, :development do
-  gem "rspec-rails", "~> 2.4"
+  gem "rspec-rails", "~> 3.5"
+  gem "shoulda-matchers"
 end
