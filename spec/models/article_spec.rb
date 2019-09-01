@@ -16,7 +16,7 @@ describe Article do
       article = create(:article, title: 'Lorem Ipsum')
 
       # assert, проверка
-      expect(article.subject). to eq 'Loren Ipsum'
+      expect(article.subject) == 'Loren Ipsum'
     end
   end
 
@@ -26,7 +26,7 @@ describe Article do
         article = create(:article_with_comments)
 
         # в проверке
-        expect(article.last_comment.body).to eq "comment body 3"
+        expect(article.last_comment.body).to eq "Comment body 3"
       end
     end
 
