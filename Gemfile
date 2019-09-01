@@ -52,7 +52,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
+  # gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
@@ -68,5 +68,6 @@ gem 'bootstrap-sass'
 group :test, :development do
   gem "rspec-rails", "~> 3.5"
   gem "shoulda-matchers"
-  gem "factory_girl_rails" 
+  gem "capybara"
+  gem "factory_girl_rails"
 end
