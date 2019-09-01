@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :article do
     title "Article title"
     text "Article text"
@@ -12,6 +12,6 @@ FactoryGirl.define do
         create_list :comment, 3, article: article
       end
     end
-    
+
   end
 end
